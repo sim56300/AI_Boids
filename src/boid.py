@@ -61,7 +61,8 @@ class Boid():
 
     def cohesion(self, total, center_of_mass):
         steering = Vector(*np.zeros(2))
-        max_force = 0.3
+        # max_force = 0.3
+        max_force = 0.7
 
         center_of_mass /= total
         center_of_mass = Vector(*center_of_mass)
